@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MultiConvertLab - Distance</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container header-content">
+			<h1>MultiConvertLab</h1>
+		</div>
+		<nav>
+			<a href="../index.html">Accueil</a>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card">
+			<h2>Conversion de distance</h2>
+			<div style="display:flex;gap:10px;flex-wrap:wrap">
+				<input id="dist-in" type="number" placeholder="Valeur" value="100">
+				<select id="dist-from">
+					<option value="m">mètres (m)</option>
+					<option value="km">kilomètres (km)</option>
+					<option value="mi">miles (mi)</option>
+					<option value="ft">feet (ft)</option>
+					<option value="cm">centimètres (cm)</option>
+					<option value="mm">millimètres (mm)</option>
+					<option value="yd">yards (yd)</option>
+				</select>
+				<select id="dist-to">
+					<option value="m">mètres (m)</option>
+					<option value="km">kilomètres (km)</option>
+					<option value="mi">miles (mi)</option>
+					<option value="ft">feet (ft)</option>
+					<option value="cm">centimètres (cm)</option>
+					<option value="mm">millimètres (mm)</option>
+					<option value="yd">yards (yd)</option>
+				</select>
+				<button id="dist-go">Convertir</button>
+				<button id="dist-copy">Copier</button>
+			</div>
+			<pre id="dist-out">Résultat : —</pre>
+		</div>
+	</div>
+
+	<footer>
+		MultiConvertLab - site de conversions | &copy; 2025 WewennJr
+	</footer>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/converters/distance.js"></script>
+</body>
+
+</html>

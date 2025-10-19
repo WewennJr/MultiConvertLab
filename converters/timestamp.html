@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MultiConvertLab - Timestamp</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container header-content">
+			<h1>MultiConvertLab</h1>
+		</div>
+		<nav>
+			<a href="../index.html">Accueil</a>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card">
+			<h2>Timestamp ↔ Date</h2>
+			<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;align-items:center">
+				<input id="ts-in" type="text" placeholder="Timestamp" value="1697750400">
+				<input id="ts-date" type="datetime-local" disabled>
+				<select id="ts-type">
+					<option value="toDate">→ Date</option>
+					<option value="toTimestamp">→ Timestamp</option>
+				</select>
+				<button id="ts-go">Convertir</button>
+				<button id="ts-copy">Copier</button>
+			</div>
+			<pre id="ts-out">Résultat : —</pre>
+		</div>
+	</div>
+
+	<footer>
+		MultiConvertLab - site de conversions | &copy; 2025 WewennJr
+	</footer>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/converters/timestamp.js"></script>
+</body>
+
+</html>

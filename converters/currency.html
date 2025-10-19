@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MultiConvertLab - Monnaie</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>MultiConvertLab</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Conversion de monnaie</h2>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <input id="cur-in" type="number" placeholder="Valeur" value="1">
+                <select id="cur-from">
+                    <option value="EUR">Euro (€)</option>
+                    <option value="USD">Dollar ($)</option>
+                    <option value="GBP">Livre (£)</option>
+                    <option value="JPY">Yen (¥)</option>
+                </select>
+                <select id="cur-to">
+                    <option value="EUR">Euro (€)</option>
+                    <option value="USD">Dollar ($)</option>
+                    <option value="GBP">Livre (£)</option>
+                    <option value="JPY">Yen (¥)</option>
+                </select>
+                <button id="cur-go">Convertir</button>
+                <button id="cur-copy">Copier</button>
+            </div>
+            <pre id="cur-out">Résultat : —</pre>
+        </div>
+    </div>
+
+    <footer>
+        MultiConvertLab - site de conversions | &copy; 2025 WewennJr
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/converters/currency.js"></script>
+</body>
+
+</html>

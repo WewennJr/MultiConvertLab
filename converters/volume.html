@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MultiConvertLab - Volume</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container header-content">
+			<h1>MultiConvertLab</h1>
+		</div>
+		<nav>
+			<a href="../index.html">Accueil</a>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card">
+			<h2>Conversion de volume</h2>
+			<div style="display:flex;gap:10px;flex-wrap:wrap">
+				<input id="vol-in" type="number" placeholder="Valeur" value="1">
+				<select id="vol-from">
+					<option value="L">Litres (L)</option>
+					<option value="m3">m³</option>
+					<option value="gal">Gallons (US)</option>
+					<option value="ml">Millilitres (mL)</option>
+					<option value="cups">Cups</option>
+					<option value="pt">Pints (US)</option>
+					<option value="floz">Fluid ounces (US)</option>
+				</select>
+				<select id="vol-to">
+					<option value="L">Litres (L)</option>
+					<option value="m3">m³</option>
+					<option value="gal">Gallons (US)</option>
+					<option value="ml">Millilitres (mL)</option>
+					<option value="cups">Cups</option>
+					<option value="pt">Pints (US)</option>
+					<option value="floz">Fluid ounces (US)</option>
+				</select>
+				<button id="vol-go">Convertir</button>
+				<button id="vol-copy">Copier</button>
+			</div>
+			<pre id="vol-out">Résultat : —</pre>
+		</div>
+	</div>
+
+	<footer>
+		MultiConvertLab - site de conversions | &copy; 2025 WewennJr
+	</footer>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/converters/volume.js"></script>
+</body>
+
+</html>

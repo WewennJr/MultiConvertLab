@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MultiConvertLab - Pression</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container header-content">
+			<h1>MultiConvertLab</h1>
+		</div>
+		<nav>
+			<a href="../index.html">Accueil</a>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card">
+			<h2>Conversion de pression</h2>
+			<div style="display:flex;gap:10px;flex-wrap:wrap">
+				<input id="press-in" type="number" placeholder="Valeur" value="101325">
+				<select id="press-from">
+					<option value="Pa">Pascal (Pa)</option>
+					<option value="kPa">Kilopascal (kPa)</option>
+					<option value="atm">Atmosphère (atm)</option>
+					<option value="bar">Bar</option>
+					<option value="psi">PSI</option>
+					<option value="torr">Torr</option>
+				</select>
+				<select id="press-to">
+					<option value="Pa">Pascal (Pa)</option>
+					<option value="kPa">Kilopascal (kPa)</option>
+					<option value="atm">Atmosphère (atm)</option>
+					<option value="bar">Bar</option>
+					<option value="psi">PSI</option>
+					<option value="torr">Torr</option>
+				</select>
+				<button id="press-go">Convertir</button>
+				<button id="press-copy">Copier</button>
+			</div>
+			<pre id="press-out">Résultat : —</pre>
+		</div>
+	</div>
+
+	<footer>
+		MultiConvertLab - site de conversions | &copy; 2025 WewennJr
+	</footer>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/converters/pressure.js"></script>
+</body>
+
+</html>

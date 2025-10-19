@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MultiConvertLab - Fréquence</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>MultiConvertLab</h1>
+        </div>
+        <nav><a href="../index.html">Accueil</a></nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Conversion de fréquence</h2>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <input id="frequency-in" type="number" placeholder="Valeur" value="60">
+                <select id="frequency-from">
+                    <option value="Hz">Hz</option>
+                    <option value="kHz">kHz</option>
+                    <option value="MHz">MHz</option>
+                    <option value="BPM">BPM</option>
+                </select>
+                <select id="frequency-to">
+                    <option value="Hz">Hz</option>
+                    <option value="kHz">kHz</option>
+                    <option value="MHz">MHz</option>
+                    <option value="BPM">BPM</option>
+                </select>
+                <button id="frequency-go">Convertir</button>
+                <button id="frequency-copy">Copier</button>
+            </div>
+            <pre id="frequency-out">Résultat : —</pre>
+        </div>
+    </div>
+
+    <footer>MultiConvertLab - site de conversions | &copy; 2025 WewennJr</footer>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/converters/frequency.js"></script>
+</body>
+
+</html>
